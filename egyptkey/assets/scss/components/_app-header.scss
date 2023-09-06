@@ -1,0 +1,46 @@
+.app-header {
+    .v-btn {
+        span {
+            font-weight: 600 !important;
+        }
+        &--active {
+            color: $primary !important;
+            &::after {
+                content: "";
+                height: 4px;
+                width: 100%;
+                object-fit: contain;
+                background-image: linear-gradient(to bottom, #ffb548, #ffc84e);
+                position: absolute;
+                bottom: -14px;
+            }
+        }
+    }
+    .profile-button {
+        width: 38px !important;
+        height: 38px !important;
+        object-fit: contain;
+        border-radius: 4px !important;
+        background-image: linear-gradient(to bottom, #ffb548, #ffc84e);
+    }
+    .v-list-item {
+        position: relative;
+        min-height: 50px !important;
+    }
+    &__list {
+        .v-list-item {
+            &--active {
+                border-bottom: 1px solid #bb7b1a;
+                color: $primary !important;
+            }
+        }
+    }
+    .v-toolbar__content,
+    .v-toolbar__extension {
+        justify-content: center;
+    }
+}
+.active-item {
+    color: $white !important;
+    background-color: rgba($color: $primary, $alpha: 0.5);
+}

@@ -1,0 +1,169 @@
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Bahij TheSansArabic" !important;
+}
+
+.font-weight-black {
+  font-weight: bolder !important;
+  font-family: "BahijBold" !important;
+}
+
+.v-btn {
+  letter-spacing: 0 !important;
+  &::before {
+      background-color: transparent !important;
+  }
+}
+.v-btn .v-btn__overlay{
+  background: transparent !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter-from,
+.fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+{
+    opacity: 0;
+}
+
+
+
+
+// Radiuses
+.radius-10 {
+  border-radius: 10px !important;
+}
+
+
+
+// Colors
+.color-white {
+  color: white !important;
+}
+
+.color-dark-white {
+  color: $dark-white !important;
+}
+
+.color-gray {
+  color: #767676;
+}
+
+.bg-light {
+  background-color: #e5f5e5 !important;
+}
+
+.bg-lighter {
+  background: #fbfbfb 0% 0% no-repeat padding-box;
+}
+
+
+
+
+li {
+  list-style: none;
+}
+
+td {
+  white-space: nowrap !important;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px !important;
+  border-radius: 10px !important;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: 10px !important;
+}
+
+
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: $primary !important;
+}
+
+a {
+  color: inherit !important;
+}
+
+
+
+@include mobile {
+  .container {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+  }
+}
+
+
+
+@include desktop {
+  .container {
+      max-width: 1280px !important;
+  }
+}
+
+
+
+.radius-4 {
+  border-radius: 6px !important;
+}
+
+
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+
+
+body {
+  overflow-x: hidden !important;
+}
+
+
+.v-list-item__overlay{
+  background: transparent !important;
+}
+
+
+.d-adjust {
+  @media (max-width: 767px) {
+      display: none;
+  }
+}
+
+
+
+
+.theme--light.v-app-bar.v-toolbar.v-sheet {
+  background-color: white !important;
+  box-shadow: 0px 0px 0px -1px rgb(0 0 0 / 20%), 0px 0px 10px 0px rgb(0 0 0 / 14%), 0px 0px 1px 0px rgb(0 0 0 / 12%) !important;
+}
